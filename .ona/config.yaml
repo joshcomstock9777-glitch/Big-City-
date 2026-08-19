@@ -1,0 +1,10 @@
+tasks:
+  installDeps:
+    name: Install dependencies
+    description: Confirm that this dependency-free proof of concept needs no installation step.
+    command: |
+      echo "No application dependency manifest found; nothing to install."
+    triggeredBy:
+      - manual
+      - postDevcontainerStart
+      - prebuild
